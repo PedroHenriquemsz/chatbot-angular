@@ -1,0 +1,18 @@
+<main class="chat-wrapper">
+    <header>
+        <button>
+            <icon-arrow-left></icon-arrow-left>
+        </button>
+        <icon-museum class="museum"></icon-museum>
+        <div class="status">
+            <p>Museu</p>
+            <span>•Online</span>
+        </div>
+    </header>
+    <section class="chat-content">
+        <app-chat-suggestions 
+        (questionSelected)="sendSuggestedQuestion($event)" *ngIf="messages.length < 1">
+    </app-chat-suggestions>
+    <app-chat-dialog [messages]="messages"></app-chat-dialog>
+    </section>
+</main>

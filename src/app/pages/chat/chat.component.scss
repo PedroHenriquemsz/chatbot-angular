@@ -1,0 +1,39 @@
+.chat-wrapper{
+    height: 90%;
+    
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 30px 30px 14px 30px ;
+        gap: 20px;
+
+        border-bottom: 1px solid var(--border-colour);
+
+        button{
+            border: none;
+            background: transparent;
+        }
+
+        .museum{
+            height: 40px;
+            width: 40px;
+        }
+
+        .status{
+            p{
+                color: var(--primary-colour);
+                font-weight: bold;
+            }
+            span{
+                font-weight: 500;
+                color: var(--online-colour);
+            }
+        }
+    }
+
+    .chat-content{
+        height: 100%;
+        padding: 18px 30px 36px 30px;
+    }
+}
